@@ -1,0 +1,12 @@
+---
+const { post, titleTag = "h3" } = Astro.props;
+const TitleTag = titleTag;
+---
+
+<a class="card post-card-link" href={`/blog/${post.slug}/`}>
+  <div class="small">{post.data.pubDate.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}</div>
+  <TitleTag class="post-card-title">
+    {post.data.title}
+  </TitleTag>
+  <p class="small">{post.data.description}</p>
+</a>

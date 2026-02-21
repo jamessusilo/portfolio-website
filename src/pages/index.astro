@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
+import PostCard from "../components/PostCard.astro";
 
 const allPosts = await getCollection("blog");
 const posts = allPosts
@@ -23,21 +24,15 @@ const posts = allPosts
     </div>
   </section>
 
-  <section class="section" style="padding-top: 0;">
+  <section class="section section-compact-top">
     <div class="container">
-      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px;">
-        <h2 style="margin: 0;">Latest writing</h2>
+      <div class="section-head">
+        <h2>Latest writing</h2>
         <a class="small" href="/blog/">View all</a>
       </div>
-      <div class="list" style="margin-top: 20px;">
+      <div class="list list-spaced">
         {posts.map((post) => (
-          <article class="card">
-            <div class="small">{post.data.pubDate.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}</div>
-            <h3 style="margin: 12px 0 8px;">
-              <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
-            </h3>
-            <p class="small">{post.data.description}</p>
-          </article>
+          <PostCard post={post} titleTag="h3" />
         ))}
       </div>
     </div>
