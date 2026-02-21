@@ -1,0 +1,64 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allPosts = await getCollection("blog");
+const posts = allPosts
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<BaseLayout>
+  <section class="section">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <h1 class="page-title">Robotics, clearly explained.</h1>
+          <p class="lead">
+            I’m James Susilo, a software engineer at Google DeepMind Robotics. I write about
+            embodied AI, manipulation, and the systems that make robots feel effortless.
+          </p>
+          <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
+            <a class="button" href="/blog/">Read the blog</a>
+            <a class="button" href="/about/">About me</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="small">Focus areas</div>
+          <h2 style="margin: 12px 0 16px; font-family: 'Newsreader', serif;">Embodied intelligence in the real world.</h2>
+          <p class="small">
+            Notes on perception, control, deployment reliability, and how to bridge
+            research ideas with production robotics.
+          </p>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px;">
+            <span class="tag">Manipulation</span>
+            <span class="tag">Control</span>
+            <span class="tag">Systems</span>
+            <span class="tag">ML</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 16px;">
+        <h2 style="font-family: 'Newsreader', serif; margin: 0;">Latest writing</h2>
+        <a class="small" href="/blog/">View all</a>
+      </div>
+      <div class="list" style="margin-top: 20px;">
+        {posts.map((post) => (
+          <article class="card">
+            <div class="small">{post.data.pubDate.toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}</div>
+            <h3 style="margin: 12px 0 8px; font-family: 'Newsreader', serif;">
+              <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+            </h3>
+            <p class="small">{post.data.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,44 @@
+---
+import "../styles/global.css";
+
+const { title, description } = Astro.props;
+const pageTitle = title ? `${title} · James Susilo` : "James Susilo";
+const pageDescription = description ?? "Robotics engineer writing about embodied AI, manipulation, and real-world systems.";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={pageDescription} />
+    <title>{pageTitle}</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate" type="application/rss+xml" title="James Susilo RSS" href="/rss.xml" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <div class="nav-brand">
+              <a class="nav-logo" href="/">James Susilo</a>
+            </div>
+            <ul class="nav-links">
+              <li><a href="/blog/">Blog</a></li>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/tags/">Tags</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <slot />
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div>© {new Date().getFullYear()} James Susilo</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
