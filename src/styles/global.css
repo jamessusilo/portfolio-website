@@ -376,6 +376,8 @@ main {
     align-items: center;
     justify-content: center;
     color: var(--ink);
+    width: 28px;
+    height: 28px;
 }
 
 .social-icons a:hover {
@@ -383,6 +385,6 @@ main {
 }
 
 .social-icons svg {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 }
