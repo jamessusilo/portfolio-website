@@ -364,3 +364,25 @@ main {
     font-size: 0.95rem;
     color: var(--muted);
 }
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 1.25rem;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--ink);
+}
+
+.social-icons a:hover {
+    color: var(--ink);
+}
+
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+}
