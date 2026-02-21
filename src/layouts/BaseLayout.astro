@@ -4,6 +4,13 @@ import "../styles/global.css";
 const { title, description } = Astro.props;
 const pageTitle = title ? `${title} · James Susilo` : "James Susilo";
 const pageDescription = description ?? "Robotics engineer writing about embodied AI, manipulation, and real-world systems.";
+const pathname = Astro.url.pathname;
+const normalizePath = (path) => (path !== "/" && path.endsWith("/") ? path.slice(0, -1) : path);
+const currentPath = normalizePath(pathname);
+const isActive = (path) => {
+  const target = normalizePath(path);
+  return currentPath === target || currentPath.startsWith(`${target}/`);
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -24,9 +31,15 @@ const pageDescription = description ?? "Robotics engineer writing about embodied
               <a class="nav-logo" href="/">James Susilo</a>
             </div>
             <ul class="nav-links">
-              <li><a href="/blog/">Blog</a></li>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/tags/">Tags</a></li>
+              <li>
+                <a href="/blog/" class:list={{ active: isActive("/blog") }} aria-current={isActive("/blog") ? "page" : undefined}>Blog</a>
+              </li>
+              <li>
+                <a href="/about/" class:list={{ active: isActive("/about") }} aria-current={isActive("/about") ? "page" : undefined}>About</a>
+              </li>
+              <li>
+                <a href="/tags/" class:list={{ active: isActive("/tags") }} aria-current={isActive("/tags") ? "page" : undefined}>Tags</a>
+              </li>
             </ul>
           </nav>
         </div>
