@@ -22,59 +22,70 @@ This wasn’t a reaction to hype. It was a structural decision.
 When I make long-term bets, I use three filters:
 
 1. Does it matter economically?
-2. Is it technically deep enough to compound for at least a decade?
-3. Does it expand real-world productivity, not just digital convenience?
+2. Is it technically deep enough to compound for _at least_ a decade?
+3. Does it materially affect how humans live and work?
 
 Robotics sits at the intersection of all three.
 
-## The Physical Economy Is Still Manual
+## 1. It Matters Economically
 
-AI has transformed how we process information.
+Most of the global economy is still grounded in physical execution.
 
-But most of the global economy is not information work.
+Warehousing. Manufacturing. Construction. Logistics. Agriculture. Infrastructure. Care.
 
-It is warehousing, manufacturing, construction, logistics, infrastructure maintenance, agriculture, and care.
+We’ve made intelligence abundant in software. We haven’t made it abundant in the physical world.
 
-We have optimized the digital layer of the economy. We have barely automated the physical one.
+Economic output is increasingly constrained not by ideas, but by execution capacity.
 
-GDP is physical. Productivity constraints are physical. Labor shortages are physical.
+Labor markets are tightening in many developed economies. Skilled trades are shrinking. Critical infrastructure is aging faster than it is repaired.
 
-If intelligence remains confined to software, we leave most of the economy untouched.
+When execution becomes the bottleneck, automation stops being optional.
 
-Robotics is how intelligence enters the real world.
+Robotics sits directly inside the productive core of the real economy. Not at the surface layer of convenience, but at the layer where materials move, systems operate, and infrastructure functions.
 
-## Labor Is the Constraint of the Next Cycle
+That makes it economically consequential.
 
-Many developed economies are aging. Skilled trades are shrinking. Infrastructure is deteriorating faster than it is repaired.
+## 2. It Compounds Technically
 
-The binding constraint is no longer just capital or information. It is execution capacity.
+I am less interested in fields that produce isolated breakthroughs than in fields that compound.
 
-Who moves the materials?  
-Who maintains the grid?  
-Who builds the housing?  
-Who staffs the warehouses?
+For decades, robotics was fragmented. Every task required custom engineering. Every environment required new tuning. Every deployment felt bespoke.
 
-When labor tightens structurally, automation accelerates.
+Progress was real, but it reset too often.
 
-Robotics is not a futuristic luxury. It is an economic response to demographic reality.
+Foundation models change the slope.
 
-## Why Foundation Models Change the Slope
+Shared representations enable transfer. Capabilities stack instead of restarting. The marginal cost of adding new functionality begins to fall.
 
-For decades, robotics was fragmented.
+This does not eliminate friction. Physical systems remain unforgiving. Deployment is still difficult. Hardware cycles are slower than software cycles.
 
-Each task required custom pipelines. Each environment required new tuning. Each deployment was effectively bespoke.
+But the underlying trajectory shifts from incremental to compounding.
 
-Progress was incremental and siloed.
+If I’m committing at least a decade, I want a field where progress builds on itself.
 
-Foundation models introduce a different dynamic: shared representations, transfer across tasks, compounding capability.
+Robotics is finally entering that phase.
 
-The important shift is not that robots suddenly work everywhere.
+## 3. It Materially Affects How Humans Live and Work
 
-It is that the marginal cost of expanding what they can do begins to fall.
+There is a difference between optimizing interfaces and reshaping environments.
 
-Slope matters more than headlines.
+Many digital technologies improve convenience. Fewer change the structure of daily work and physical systems.
 
-When capability compounds instead of resets, industries change.
+Robotics does.
+
+It operates in warehouses where consistency matters more than novelty.
+It maintains infrastructure that cannot afford downtime.
+It enters environments that are repetitive, hazardous, or chronically understaffed.
+
+When intelligence leaves the screen and enters the physical world, the implications are not just computational. They are structural.
+
+It changes how work is performed.
+It changes how capacity is allocated.
+It changes what is possible to maintain at scale.
+
+That is not just productivity optimization. It is a shift in how society functions operationally.
+
+If a technology alters how humans live and work at the physical layer, its impact is durable.
 
 ## Where Value Will Actually Accumulate
 
@@ -82,27 +93,29 @@ Most public conversation about robotics focuses on hardware.
 
 Better actuators. Better hands. Better humanoids.
 
-Hardware matters. But hardware alone rarely captures durable margin.
+Hardware matters. But in most technological cycles, durable value does not concentrate solely in physical components.
 
-In most major technological cycles, value concentrates in the layers that:
+It concentrates in the layers that:
 
 - Abstract complexity
 - Enable scale
 - Orchestrate systems
 - Own the feedback loop
 
-Cloud computing did not primarily reward server manufacturers.  
+Cloud computing did not primarily reward server manufacturers.
 Operating systems did not primarily reward peripheral makers.
 
-Robotics will likely follow a similar pattern.
+In robotics, the spotlight today is on form.
 
-The spotlight today is on physical form.
+The durable long-term value may sit in infrastructure, deployment systems, orchestration layers, data flywheels, and the mechanisms that make robots economically viable at scale.
 
-The durable value may sit in infrastructure, deployment systems, orchestration layers, data flywheels, and the mechanisms that make robots economically viable at scale.
+That layer is harder to see.
+
+It is also harder to replicate.
 
 That is the layer I find most compelling.
 
-## Hard Domains Create Deep Leverage
+## Why I’m All In
 
 Robotics is slower than software.
 
@@ -110,16 +123,16 @@ Hardware cycles are longer. Integration is difficult. Deployment is messy. Reali
 
 But friction creates defensibility.
 
-The hardest domains produce the deepest moats.
+The hardest domains produce the deepest leverage.
 
-This is not a two-year bet.  
+This is not a two-year bet.
 It is not even a single-decade bet.
 
-It is a commitment for at least a decade, likely longer.
+It is a commitment for at least a decade — likely longer.
 
-Infrastructure does not emerge overnight. It compounds.
+Infrastructure compounds slowly. But once it compounds, it becomes foundational.
 
-If embodied intelligence becomes a foundational layer of the physical economy, it will take time, iteration, and discipline.
+If embodied intelligence becomes a structural layer of the physical economy, it will reshape more than interfaces. It will reshape systems.
 
 And if you are going to build in a domain that compounds slowly and defensibly, you don’t hedge.
 
@@ -127,4 +140,4 @@ To be ballin, you gotta be all in.
 
 Not because it sounds bold.
 
-Because durable industries reward long-term conviction.
+Because durable industries reward conviction.
